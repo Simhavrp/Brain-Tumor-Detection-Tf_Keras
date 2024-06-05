@@ -14,14 +14,23 @@ The split_data function splits the data into training, validation, and testing s
 The CNN model is built using Keras with several layers including:
 
 Input layer
+
 ZeroPadding2D
+
 Convolutional layer with 32 filters
+
 BatchNormalization
+
 ReLU activation
+
 MaxPooling2D
+
 Flatten
+
 Fully connected layer with sigmoid activation for binary classification
-Training
+
+Training:
+
 The model is trained using the Adam optimizer and binary cross-entropy loss. The training process includes callbacks for TensorBoard and model checkpointing.
 
 After training, the model's performance can be visualized using training and validation metrics. Metrics such as training loss, validation loss, training accuracy, and validation accuracy are plotted to evaluate the model's performance.
